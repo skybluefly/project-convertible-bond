@@ -13,5 +13,5 @@ before_install:
 script:
   - npm run build
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker build -t bikachaosky/project-convertible-bond:latest .
-  - docker push bikachaosky/project-convertible-bond:latest
+  - docker build -t bikachaosky/project-convertible-bond:1.0.0 .
+  - docker push bikachaosky/project-convertible-bond:1.0.0
